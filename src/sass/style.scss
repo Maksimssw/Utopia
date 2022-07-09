@@ -1,0 +1,25 @@
+
+@import "./base/button";
+@import "./base/mixin";
+@import "./base/variable";
+
+body{
+    font-family: 'Manrope', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    &:focus{
+        outline: none;
+    }
+}
+
+img{
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,33 @@
+@import "./variable";
+@import "./mixin";
+
+.btn{
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .5s all;
+    width: 306px;
+}
+
+.btn-green{
+    background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+    box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
+    @include font($white, 800, 16px, 22px);
+    &:focus, &:hover{
+        background: linear-gradient($white);
+        box-shadow: none;
+        color: $darkBlack;
+    }
+}
+
+.btn-white{
+    @include font($darkBlack, 800, 16px, 22px);
+    background: linear-gradient($white);
+    &:focus, &:hover{
+        background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
+        box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);
+        color: $white;
+    }
+}
