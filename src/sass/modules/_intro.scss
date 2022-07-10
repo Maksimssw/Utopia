@@ -1,0 +1,104 @@
+@import "../base/mixin";
+@import "../base/variable";
+
+.intro{
+    padding: 136px 0 176px;
+    position: relative;
+    margin-bottom: 50px;
+    &__laptop{
+        position: absolute;
+        top: -50px;
+        right: 100px;
+        z-index: -1;
+    }
+    &__text{
+        width: 684px;
+    }
+    &__ecology{
+        margin-bottom: 15px;
+        @include font($green, 600, 25px, 28px);
+        font-family: 'Graphik LCG';
+    }
+    &__title{
+        margin-bottom: 28px;
+        @include font($darkBlack, 500, 55px, 72px);
+    }
+    &__subtitle{
+        margin-bottom: 35px;
+        @include font($darkBlack, 400, 20px, 140%);
+    }
+    &-anime{
+        opacity: 0;
+        transform: translateX(-100px);  
+        &__btn{
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and(max-width: 1300px) {
+    .intro{
+        padding: 80px 0 120px;
+        &__laptop{
+            width: 925px;
+            height: 550px;
+            right: 0;
+        
+        }
+        &__title{
+            font-size: 42px;
+            line-height: 54px;
+        }
+        &__subtitle{
+            font-size: 18px;
+            line-height: 130%;
+        }
+        &__ecology{
+            font-size: 22px;
+            line-height: 25px;
+        }
+        &__ecology{
+            font-size: 25px;
+            line-height: 28px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 1134px) {
+    .intro{
+        margin-bottom: 0;
+        &__laptop{
+            display: none;
+        }
+        &__title{
+            font-size: 55px;
+            line-height: 72px;
+        }
+        &__subtitle{
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .intro{
+        &__text{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .intro{
+        &__ecology{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__title{
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+}

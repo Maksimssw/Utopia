@@ -1,0 +1,168 @@
+@import "../base/mixin";
+@import "../base/variable";
+
+.header{
+    padding: 8px 0;
+    opacity: 0;
+    transform: translateY(-79px);
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__btn{
+        width: 180px;
+        border: 1px solid $green;
+    }
+}
+
+.header.fixed{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: #f7f8f3;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    &__list{
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        @include font($darkBlack, 500, 17px, 23px);
+        position: relative;
+        transition: 0.3s all;
+        &::before{
+            content: '';
+            height: 2px;
+            width: 0%;
+            transition: 0.3s all;
+            background: $green;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+        }
+        &:hover, &:focus{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.hamburger{
+    width: 40px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s all;
+    li{
+        background: $green;
+        width: 100%;
+        transition: 0.3s all;
+        height: 4px;
+    }
+}
+
+.hamburger.active{
+    li{
+        &:nth-last-child(1){
+            transform: translateY(-13px) rotate(45deg);
+        }
+        &:nth-last-child(2){
+            display: none;
+        }
+        &:nth-last-child(3){
+            transform: translateY(13px) rotate(-45deg);
+        }
+    }
+}
+
+.retractable-menu{
+    opacity: 0;
+    transform: translateX(-10px);
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    visibility: hidden;
+    transition: .7s all;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    padding: 25px;
+    background: #D9D9D9;
+    .header{
+        &__btn{
+            display: block;
+            border: none;
+            background: none;
+            &:focus, &:hover{
+                color: $darkBlack;
+                background: none;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrapper{
+            flex-direction: column;
+            .logo{
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        flex-direction: column;
+        &__list{
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+}
+
+
+@media screen and(max-width: 1300px) {
+
+}
+
+
+@media screen and(max-width: 1134px) {
+    .header{
+        &__btn{
+            display: none;
+        }
+        .menu{
+            display: none;
+        }
+    }
+    .hamburger{
+        display: flex;
+    }
+    .retractable-menu.active{
+        visibility: visible;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and(max-width: 767px) {
+    
+}
+
+@media screen and(max-width: 550px) {
+    .retractable-menu{
+        width: 60%;
+    }
+}
