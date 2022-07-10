@@ -18621,6 +18621,51 @@ const header = () => {
 
 /***/ }),
 
+/***/ "./src/js/modules/internetAnime.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/internetAnime.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! animejs/lib/anime.es.js */ "./node_modules/animejs/lib/anime.es.js");
+
+
+const internetAnime = () => {
+
+    const listMini = document.querySelectorAll('.internet__list-mini');
+    const listBig = document.querySelector('.internet__list-big');
+    const heightMini = document.querySelector('.internet__help');
+    const heightBig = document.querySelector('.internet__help-big');
+
+    console.log(listBig);
+
+    if(listBig){
+        (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            targets: listMini,
+            height: `${heightMini.offsetHeight}px`,
+            delay: 700,
+            duration: 700,
+            easing: 'linear',
+        });
+
+        (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+            targets: listBig,
+            height: `${heightBig.offsetHeight}px`,
+            duration: 2000,
+        })
+    }
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (internetAnime);
+
+/***/ }),
+
 /***/ "./src/js/modules/introAnime.js":
 /*!**************************************!*\
   !*** ./src/js/modules/introAnime.js ***!
@@ -18699,9 +18744,6 @@ const toolsAnime = () => {
         toolsList.forEach(el => {
             
             let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-            
-            console.log(windowCenter);
-            console.log(scrollOffset);
 
             if(windowCenter >= scrollOffset){
 
@@ -18830,6 +18872,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_introAnime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/introAnime */ "./src/js/modules/introAnime.js");
 /* harmony import */ var _modules_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/header */ "./src/js/modules/header.js");
 /* harmony import */ var _modules_toolsAnime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/toolsAnime */ "./src/js/modules/toolsAnime.js");
+/* harmony import */ var _modules_internetAnime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/internetAnime */ "./src/js/modules/internetAnime.js");
+
 
 
 
@@ -18840,6 +18884,7 @@ window.addEventListener('DOMContentLoaded', function(){
     (0,_modules_introAnime__WEBPACK_IMPORTED_MODULE_1__["default"])();
     (0,_modules_header__WEBPACK_IMPORTED_MODULE_2__["default"])();
     (0,_modules_toolsAnime__WEBPACK_IMPORTED_MODULE_3__["default"])();
+    (0,_modules_internetAnime__WEBPACK_IMPORTED_MODULE_4__["default"])();
 })
 })();
 

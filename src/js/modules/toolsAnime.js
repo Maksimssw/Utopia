@@ -11,9 +11,6 @@ const toolsAnime = () => {
         toolsList.forEach(el => {
             
             let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-            
-            console.log(windowCenter);
-            console.log(scrollOffset);
 
             if(windowCenter >= scrollOffset){
 
