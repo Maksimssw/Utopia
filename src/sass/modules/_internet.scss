@@ -28,6 +28,7 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
+            bottom: 0;
             p{
                 font-size: 20px;
             }
@@ -83,8 +84,99 @@
     }
     &__help{
         height: 281px;
+        opacity: 0;
+        visibility: hidden;
         &-big{
+            opacity: 0;
+            visibility: hidden;
             height: 349px;
+        }
+    }
+}
+
+@media screen and(max-width: 1300px) {
+    .internet{
+        &__list{
+            width: 35%;
+            &:nth-last-child(2){
+               width: 40%;
+               p{
+                font-size: 18px;
+               }
+               h2{
+                font-size: 22px;
+               }
+            }
+            &:nth-last-child(3){
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+        &__help{
+            &-big{
+                height: 314px;
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 1134px) {
+    .internet{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            flex-wrap: wrap;
+            height: auto;
+        }
+        &__list{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 99%;
+            transition: 0.3s all;
+            transform: translateX(-10px);
+            &:nth-last-child(2){
+                transform: translateX(32%);
+                left: 0;
+                width: 122%;
+                grid-row: 1;
+            }
+            &:nth-last-child(1){
+                grid-row: 2;
+            }
+            &:nth-last-child(3){
+                grid-row: 2;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .internet{
+        &__wrapper{
+            grid-template-columns: 100%;
+            gap: 30px;
+        }
+        &__list{
+            height: 280px;
+            &:nth-last-child(2){
+                    position: relative;
+                    transform: translateX(0px);
+                    left: 0;
+                    height: 300px;
+                    width: 100%;
+                }
+                &:nth-last-child(1){
+                    grid-row: 2;
+                }
+                &:nth-last-child(3){
+                    grid-row: 3;
+                }
+            }
+        &__help{
+            width: 1px;
         }
     }
 }

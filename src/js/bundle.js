@@ -18635,30 +18635,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! animejs/lib/anime.es.js */ "./node_modules/animejs/lib/anime.es.js");
 
 
+
 const internetAnime = () => {
 
     const listMini = document.querySelectorAll('.internet__list-mini');
     const listBig = document.querySelector('.internet__list-big');
     const heightMini = document.querySelector('.internet__help');
     const heightBig = document.querySelector('.internet__help-big');
+    const container = document.querySelector('.internet .container');
 
-    console.log(listBig);
+    const heightBigPx = `${heightBig.offsetHeight}px`;
+    heightBig.style.display = 'none';
 
-    if(listBig){
-        (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
-            targets: listMini,
-            height: `${heightMini.offsetHeight}px`,
-            delay: 700,
-            duration: 700,
-            easing: 'linear',
-        });
+    const heightMiniPx = `${heightMini.offsetHeight}px`;
+    heightMini.style.display = 'none';
 
-        (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
-            targets: listBig,
-            height: `${heightBig.offsetHeight}px`,
-            duration: 2000,
-        })
-    }
+
+
+    (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        targets: listMini,
+        height: heightMiniPx,
+        delay: 700,
+        duration: 700,
+        easing: 'linear',
+    });
+
+    (0,animejs_lib_anime_es_js__WEBPACK_IMPORTED_MODULE_0__["default"])({
+        targets: listBig,
+        height: heightBigPx,
+        duration: 2000,
+    })
+
 
 }
 
