@@ -1,5 +1,4 @@
 import anime from 'animejs/lib/anime.es.js';
-import { func } from 'prop-types';
 
 const internetAnime = () => {
 
@@ -7,7 +6,6 @@ const internetAnime = () => {
     const listBig = document.querySelector('.internet__list-big');
     const heightMini = document.querySelector('.internet__help');
     const heightBig = document.querySelector('.internet__help-big');
-    const container = document.querySelector('.internet .container');
 
     const heightBigPx = `${heightBig.offsetHeight}px`;
     heightBig.style.display = 'none';
@@ -23,15 +21,17 @@ const internetAnime = () => {
         delay: 700,
         duration: 700,
         easing: 'linear',
+        opacity: 1,
     });
 
     anime({
         targets: listBig,
         height: heightBigPx,
-        duration: 2000,
+        duration: 700,
+        delay: 500,
+        opacity: 1,
+        easing: 'linear',
     })
-
-
 }
 
 export default internetAnime;

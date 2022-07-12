@@ -19,6 +19,7 @@
         bottom: 0;
         width: 394px;
         height: 0px;
+        opacity: 0;
         &:nth-last-child(1){
             left: 0;
         }
@@ -155,17 +156,17 @@
 
 @media screen and(max-width: 767px) {
     .internet{
+        padding: 70px 0;
         &__wrapper{
             grid-template-columns: 100%;
-            gap: 30px;
+            gap: 20px;
         }
         &__list{
-            height: 280px;
+            width: 100%;
             &:nth-last-child(2){
                     position: relative;
                     transform: translateX(0px);
                     left: 0;
-                    height: 300px;
                     width: 100%;
                 }
                 &:nth-last-child(1){
@@ -177,6 +178,51 @@
             }
         &__help{
             width: 1px;
+        }
+        &__title{
+            font-size: 34px;
+            height: 130%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 550px) {
+    .internet{
+        .container{
+            position: relative;
+            overflow: hidden;
+        }
+        &__wrapper{
+            gap: 0px;
+        }
+        &__list{
+            margin: 0 auto;
+            transform: translateX(0px);
+            &:nth-last-child(2){
+                div{
+                    margin-bottom: 5px;
+                    margin-top: 15px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            &:nth-last-child(3){
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__icon{
+            margin-bottom: 5px;
+        }
+        &__heading{
+            font-size: 18px;
         }
     }
 }

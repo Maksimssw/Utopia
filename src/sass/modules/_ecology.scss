@@ -1,0 +1,80 @@
+@import '../base/mixin';
+@import '../base/variable';
+
+.ecology{
+    .container{
+        position: relative;
+        overflow: hidden;
+    }
+    &__wrapper{
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        &-white{
+            background:  #f7f8f3;
+        }
+        &-left{
+            display: block;
+        }
+    }
+    &__heading{
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 25px;
+        &-dark{
+            color: $darkBlack
+        }
+    }
+    &__subtitle{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 35px;
+        &-dark{
+            $color: $darkBlack;
+        }
+    }
+    &__title{
+        @include font($darkBlack, 500, 40px, 52px);
+        margin-bottom: 72px;
+        text-align: center;
+    }
+    &__text{
+        width: 400px;
+        opacity: 0;
+        padding: 100px 0px 100px 70px;
+        &-left{
+            margin-left: auto;
+            margin-right: 200px;
+        }
+        &__wrapper{
+            width: 656px;
+            background: #f7f8f3;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 502px;
+            border-radius: 35px;
+        }
+    }
+    &__ph{
+        width: 656px;
+        height: 502px;
+        border-radius: 35px;
+        overflow: hidden;
+        opacity: 0;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &-left{
+            width: 661px;
+            left: 0;
+            z-index: -1;
+            top: 0;
+        }
+    }
+}
