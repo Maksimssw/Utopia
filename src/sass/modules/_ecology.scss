@@ -77,4 +77,82 @@
             top: 0;
         }
     }
+    &__circle{
+        background: url('../../img/circle.svg') no-repeat center;
+        background-size: 100% 100%;
+        position: absolute;
+        width: 580px;
+        top: 400px;
+        height: 580px;
+        z-index: -1;
+        left: -300px;
+    }
+}
+
+@media screen and(max-width: 1300px) {
+    .ecology{
+
+    }
+}
+
+
+@media screen and(max-width: 1134px) {
+    .ecology{
+        &__wrapper{
+            display: block;
+        }
+        &__text{
+            padding: 40px;
+            width: 100%;
+            &__wrapper{
+                position: relative;
+                height: auto;
+                width: 100%;
+            }
+        }
+        &__heading{
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+        }
+        &__ph{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and(max-width: 1134px) {
+    .ecology{
+        &__title{
+            font-size: 28px;
+            line-height: 32px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+@media screen and(max-width: 550px) {
+    .ecology{
+        &__heading{
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__text{
+            padding: 20px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &__wrapper{
+            margin-bottom: 40px;
+        }
+    }
 }

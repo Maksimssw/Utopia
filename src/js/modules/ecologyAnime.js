@@ -1,6 +1,5 @@
 import anime from 'animejs/lib/anime.es.js';
-import e from 'cors';
-import { func } from 'prop-types';
+
 
 const ecologyAnime = (text, photo) => {
 
@@ -27,16 +26,3 @@ const ecologyAnime = (text, photo) => {
 export default ecologyAnime;
 
 
-
-
-
-
-function pow(x, n){
-    if(n === 1){
-        return x 
-    } else{
-        return x * pow(x, n - 1);
-    }
-}
-
-console.log(pow(3, 1));

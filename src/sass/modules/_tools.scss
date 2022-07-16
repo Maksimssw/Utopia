@@ -4,7 +4,7 @@
 .tools{
     position: relative;
     background: url('../../img/Union.jpg') no-repeat center;
-    background-size: 100% 100%;
+    background-size: 1400px  100%;
     &__title{
         text-align: center;
         @include font($darkBlack, 500, 40px, 52px);
@@ -78,7 +78,8 @@
             top: -100px;
         }
         &__box{
-            left: -150px;
+            left: -160px;
+            top: 249px;
         }
     }
 }
