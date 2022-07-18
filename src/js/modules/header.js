@@ -1,4 +1,3 @@
-import anime from 'animejs/lib/anime.es.js';
 
 const header = () => {
 
@@ -18,14 +17,6 @@ const header = () => {
             intro.style.marginTop = '0px';
         }
     });
-
-    anime({
-        targets: header,
-        translateY: 0,
-        opacity: 1,
-        easing: 'linear'
-    })
-
 }
 
 export default header;

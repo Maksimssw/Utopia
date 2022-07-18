@@ -27,13 +27,6 @@
         margin-bottom: 35px;
         @include font($darkBlack, 400, 20px, 140%);
     }
-    &-anime{
-        opacity: 0;
-        transform: translateX(-100px);  
-        &__btn{
-            opacity: 0;
-        }
-    }
 }
 
 @media screen and(max-width: 1300px) {

@@ -18,6 +18,10 @@
         &-left{
             display: block;
         }
+        &-green{
+            background: url('../../img/Ecology/Rectangle.png'), linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%)  no-repeat center;
+            background-size: 100% 100%;
+        }
     }
     &__heading{
         font-size: 30px;
@@ -27,6 +31,9 @@
         &-dark{
             color: $darkBlack
         }
+        &-white{
+            color: $white;
+        }
     }
     &__subtitle{
         font-size: 20px;
@@ -34,7 +41,10 @@
         line-height: 28px;
         margin-bottom: 35px;
         &-dark{
-            $color: $darkBlack;
+            color: $darkBlack;
+        }
+        &-white{
+            color: $white;
         }
     }
     &__title{
@@ -44,11 +54,13 @@
     }
     &__text{
         width: 400px;
-        opacity: 0;
         padding: 100px 0px 100px 70px;
         &-left{
             margin-left: auto;
             margin-right: 200px;
+        }
+        &-green{
+            width: 450px;
         }
         &__wrapper{
             width: 656px;
@@ -58,6 +70,10 @@
             top: 0;
             height: 502px;
             border-radius: 35px;
+            &-green{
+                background: url('../../img/Ecology/Rectangle.png'), linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%)  no-repeat center;
+            background-size: 100% 100%;
+            }
         }
     }
     &__ph{
@@ -65,7 +81,6 @@
         height: 502px;
         border-radius: 35px;
         overflow: hidden;
-        opacity: 0;
         img{
             width: 100%;
             height: 100%;
@@ -87,14 +102,16 @@
         z-index: -1;
         left: -300px;
     }
-}
-
-@media screen and(max-width: 1300px) {
-    .ecology{
-
+    &-btn{
+        background: $white;
+        color: $darkBlack; 
+        box-shadow: none;
+        &:focus, &:hover{
+            background: $darkBlack;
+            color: $white;
+        }
     }
 }
-
 
 @media screen and(max-width: 1134px) {
     .ecology{
@@ -141,7 +158,7 @@
 @media screen and(max-width: 550px) {
     .ecology{
         &__heading{
-            font-size: 22px;
+            font-size: 20px;
             line-height: 24px;
         }
         &__text{

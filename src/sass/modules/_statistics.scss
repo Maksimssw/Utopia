@@ -26,6 +26,7 @@
     &__liner{
         background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
         height: 5px;
+        width: 100%;
         border-radius: 5px;
         margin-bottom: 50px;
         margin-top: 5px;
@@ -45,5 +46,71 @@
         width: 266px;
         height: 266px;
         top: 350px;
+    }
+}
+
+@media screen and(max-width: 1300px) {
+    .statistics{
+        &__list{
+            width: 300px;
+        }
+    }
+}
+
+@media screen and(max-width: 1134px) {
+    .statistics{
+        padding: 97px 0;
+        &__list{
+            width: 200px;
+        }
+        &__heading{
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+        &__liner{
+            margin-bottom: 30px;
+
+        }
+        &__box{
+            right: -61px;
+            top: 188px;
+        }
+        .container{
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .statistics{
+        padding: 30px 0;
+        &__list{
+            width: 150px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+        &__wrapper{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .statistics{
+        &__wrapper{
+            display: block;
+        }
+        &__list{
+            width: 100%;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__box{
+            right: -165px;
+        }
     }
 }

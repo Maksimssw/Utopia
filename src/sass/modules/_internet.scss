@@ -18,14 +18,13 @@
         padding: 42px 0;
         bottom: 0;
         width: 394px;
-        height: 0px;
-        opacity: 0;
+        height: 281px;
         &:nth-last-child(1){
             left: 0;
         }
         &:nth-last-child(2){
             width: 489px;
-            height: 0px;
+            height: 349px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
@@ -82,16 +81,6 @@
         z-index: -2;
         background: url('../../img/circle.svg') no-repeat center;
         background-size: 100% 100%;
-    }
-    &__help{
-        height: 281px;
-        opacity: 0;
-        visibility: hidden;
-        &-big{
-            opacity: 0;
-            visibility: hidden;
-            height: 349px;
-        }
     }
 }
 
