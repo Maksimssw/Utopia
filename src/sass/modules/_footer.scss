@@ -1,0 +1,23 @@
+@import '../base/mixin';
+@import '../base/variable';
+
+.footer{
+    padding: 10px 0;
+    border-top: 1px solid #D9D9D9;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__copyright{
+        @include font($darkBlack, 500, 13px, 16px);
+    }
+    &__logo{
+        width: 65px;
+        height: 42px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

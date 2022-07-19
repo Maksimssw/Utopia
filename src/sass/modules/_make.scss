@@ -1,0 +1,103 @@
+@import '../base/mixin';
+@import '../base/variable';
+
+.make{
+    position: relative;
+    margin-bottom: 70px;
+    &__wrapper{
+        padding: 88px;
+        border-radius: 35px;
+        background: url('../../img/Ecology/Rectangle.png'),linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%) no-repeat center;
+    }
+    &__title{
+        @include font($white, 600, 40px, 131%);
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    &__subtitle{
+        @include font($white, 500, 20px, 140%);
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 575px;
+        text-align: center;
+    }   
+    &-btn{
+        color: $darkBlack;
+        display: block;
+        margin: 0  auto;
+        &:hover, &:focus{
+            background: $darkBlack;
+            color: $white;
+        }
+    }
+    &__box{
+        width: 266px;
+        height: 266px;
+        background: url('../../img/box.svg') no-repeat center;
+        position: absolute;
+        top: -60px;
+        left: 250px;
+    }
+    &__circle{
+        width: 492px;
+        height: 492px;
+        background: url('../../img/circle.svg') no-repeat center;
+        position: absolute;
+        top: -60px;
+        right: 100px;
+        background-size: 100% 100%;
+        z-index: -1;
+    }
+}
+
+@media screen and(max-width: 1134px) {
+    .make{
+        &__title{
+            font-size: 34px;
+        }
+        &__box{
+            left: 40px;
+        }
+        &__circle{
+            right: 0;
+        }
+    }
+}
+
+@media screen and(max-width: 767px) {
+    .make{
+        &__wrapper{
+            padding: 30px;
+        }
+        &__subtitle{
+            width: auto;
+        }
+        .container{
+            position: relative;
+        }
+        &__bix{
+            width: 180px;
+            height: 180px;
+        }
+        &__circle{
+            width: 240px;
+            height: 240px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+    }
+}
+
+@media screen and(max-width: 550px) {
+    .make{
+        &__title{
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    }
+}
