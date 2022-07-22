@@ -176,6 +176,21 @@
     }
 }
 
+[data-aos="internet-list"]{
+    transform: translateY(60px);
+    opacity: 0;
+    &.aos-animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="internet-center"]{
+    opacity: 0;
+    &.aos-animate{
+        opacity: 1;
+    }
+}
 
 @media screen and(max-width: 550px) {
     .internet{

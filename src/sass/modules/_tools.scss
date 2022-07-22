@@ -63,6 +63,24 @@
     }
 }
 
+[data-aos="tools-title"]{
+    transform: translateY(-20px);
+    opacity: 0;
+    &.aos-animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="circle"]{
+    transform: rotate(360deg) translateX(60%);
+    opacity: 0;
+    &.aos-animate{
+        opacity: 1;
+        transform: rotate(0) translateX(0);
+    }
+}
+
 @media screen and(max-width: 1300px) {
     .tools{
         .container{

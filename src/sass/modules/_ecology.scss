@@ -113,6 +113,43 @@
     }
 }
 
+[data-aos="ecology-anime"]{
+    transform: translate(-20px, -20px);
+    opacity: 0;
+    &.aos-animate{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+[data-aos="ecology-laptop"]{
+    transform: translateX(100%);
+    opacity: 0;
+    &.aos-animate{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+[data-aos="ecology-ph-left"]{
+    transform: translateX(-100%);
+    opacity: 0;
+    &.aos-animate{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+[data-aos="ecology-anime-left"]{
+    transform: translate(20px, 20px);
+    opacity: 0;
+    &.aos-animate{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
 @media screen and(max-width: 1134px) {
     .ecology{
         &__wrapper{

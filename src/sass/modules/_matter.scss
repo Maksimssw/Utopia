@@ -3,6 +3,7 @@
 
 .matter{
     padding: 140px 0;
+    background: url('../../img/Matter/UnionMatter.jpg') no-repeat center;
     &__heading{
         @include font($darkBlack, 500, 30px, 131%);
     }

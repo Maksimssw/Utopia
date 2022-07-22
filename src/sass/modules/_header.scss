@@ -130,11 +130,23 @@
     }
 }
 
-
-@media screen and(max-width: 1300px) {
-
+[data-aos="header-logo"]{
+    transform: translateY(-100px);
+    opacity: 0;
+    &.aos-animate{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+[data-aos="intro-ecology"]{
+    transform: translateX(-20px);
+    opacity: 0;
+    &.aos-animate{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
 @media screen and(max-width: 1134px) {
     .header{

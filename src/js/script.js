@@ -6,4 +6,5 @@ window.addEventListener('DOMContentLoaded', function(){
     hamburger();
     header();
     matter();
+    AOS.init();
 })

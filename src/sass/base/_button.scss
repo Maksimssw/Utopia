@@ -11,6 +11,15 @@
     width: 306px;
 }
 
+[data-aos="btn-anime"]{
+    transform: rotate(45deg);
+    opacity: 0;
+    &.aos-animate{
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
 .btn-green{
     background: linear-gradient(98.8deg, #97BC5D 0.78%, #C0D997 98.41%);
     box-shadow: 0px 10px 30px rgba(135, 182, 112, 0.3);

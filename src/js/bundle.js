@@ -17429,6 +17429,7 @@ window.addEventListener('DOMContentLoaded', function(){
     (0,_modules_hamburger__WEBPACK_IMPORTED_MODULE_0__["default"])();
     (0,_modules_header__WEBPACK_IMPORTED_MODULE_1__["default"])();
     (0,_modules_matter__WEBPACK_IMPORTED_MODULE_2__["default"])();
+    AOS.init();
 })
 })();
 

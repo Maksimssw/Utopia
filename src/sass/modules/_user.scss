@@ -44,6 +44,28 @@
     }
 }
 
+[data-aos="user-title"]{
+    transform: translateY(10px);
+    opacity: 0;
+    &.aos-animate{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+[data-aos="user-star"]{
+    transform: translateY(20px);
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+    &.aos-animate{
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+        width: 35px;
+        height: 35px;
+    }
+}
+
 @media screen and(max-width: 1134px) {
     .user{
         &__list{

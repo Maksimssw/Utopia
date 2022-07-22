@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts/style.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/libs/aos.css">
     <link rel="icon" type="image/png" href="./icon/Logo.ico"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
     <body>
         <header class="header">
             <div class="container">
-                <nav class="header__wrapper">
+                <nav class="header__wrapper" data-aos="header-logo" data-aos-duration="1000">
                     <a href="#" class="logo">
                         <img src="img/Header/utopia-logo-white 2.svg" alt="logo">
                     </a>
@@ -58,35 +59,39 @@
             <div class="container">
                 <div class="intro__wrapper">
                     <div class="intro__text">
-                        <p class="intro__ecology intro-anime">Can the Internet be eco-friendly?</p>
-                        <h1 class="intro__title intro-anime">Utopia P2P — the Internet without Damage to Nature</h1>
-                        <p class="intro__subtitle intro-anime">Utopia P2P is a decentralized multifunctional ecosystem with a low carbon footprint. It unites conscious people and enables them to make the most of the green Internet for free.
+                        <p class="intro__ecology" data-aos="intro-ecology" data-aos-delay="50"
+                        data-aos-duration="1000">Can the Internet be eco-friendly?</p>
+                        <h1 class="intro__title" data-aos="intro-ecology" data-aos-delay="150"
+                        data-aos-duration="1000">Utopia P2P — the Internet without Damage to Nature</h1>
+                        <p class="intro__subtitle" data-aos="intro-ecology" data-aos-delay="250"
+                        data-aos-duration="1000">Utopia P2P is a decentralized multifunctional ecosystem with a low carbon footprint. It unites conscious people and enables them to make the most of the green Internet for free.
                         </p>
-                        <button class="btn btn-green intro-anime__btn">Try it now</button>
+                        <button class="btn btn-green intro-anime__btn" data-aos="intro-ecology" data-aos-delay="350"
+                        data-aos-duration="1000">Try it now</button>
                     </div>
-                    <img src="./img/Intro/laptop.jpg" class="intro__laptop" alt="laptop">
+                    <img src="./img/Intro/laptop.jpg" data-aos="fade-up" class="intro__laptop" alt="laptop">
                 </div>
             </div>
         </section>
         <section class="tools">
             <div class="container">
-                <h2 class="tools__title">What are the Main Tools of Utopia P2P?</h2>
+                <h2 class="tools__title" data-aos="tools-title" data-aos-duration="1000">What are the Main Tools of Utopia P2P?</h2>
                 <ul class="tools__top">
-                    <li style="transform: translateY(-10px);" class="tools__list">
+                    <li data-aos="tools-title" data-aos-duration="1000" data-aos-delay="50" class="tools__list"> 
                         <div class="tools__icon">
                             <img src="img/Tools/icon1.svg" alt="icon">
                         </div>
                         <h3 class="tools__heading">Carbon-free messenger</h3>
                         <p class="tools__subheader">Instant messages, channels, and group chats</p>
                     </li>
-                    <li class="tools__list">
+                    <li class="tools__list" data-aos="tools-title" data-aos-duration="1000" data-aos-delay="250">
                         <div class="tools__icon">
                             <img src="img/Tools/icon2.svg" alt="icon">
                         </div>
                         <h3 class="tools__heading">Spam-free email</h3>
                         <p class="tools__subheader">Email without newsletters</p>
                     </li>
-                    <li class="tools__list">
+                    <li class="tools__list" data-aos="tools-title" data-aos-duration="1000" data-aos-delay="450">
                         <div class="tools__icon">
                             <img src="img/Tools/icon3.svg" alt="icon">
                         </div>
@@ -95,14 +100,14 @@
                     </li>
                 </ul>
                 <ul class="tools__bottom">
-                    <li class="tools__list">
+                    <li class="tools__list" data-aos="tools-title" data-aos-duration="1000" data-aos-delay="650">
                         <div class="tools__icon">
                             <img src="img/Tools/icon4.svg" alt="icon">
                         </div>
                         <h3 class="tools__heading">Low-energy browser</h3>
                         <p class="tools__subheader">Ads-free interface that saves electricity</p>
                     </li>
-                    <li class="tools__list">
+                    <li class="tools__list" data-aos="tools-title" data-aos-duration="1000" data-aos-delay="850">
                         <div class="tools__icon">
                             <img src="img/Tools/icon5.svg" alt="icon">
                         </div>
@@ -111,33 +116,33 @@
                     </li>
                 </ul>
                 <div class="tools__union"></div>
-                <div class="tools__circle"></div>
+                <div class="tools__circle" data-aos="circle" data-aos-duration="3000"></div>
             </div>
         </section>
         <div class="container">
-            <button class="btn btn-green tools__btn">
+            <button class="btn btn-green tools__btn" data-aos="btn-anime" data-aos-duration="1000">
                 Download now
             </button>
         </div>
         <section class="internet">
             <div class="container">
-                <h2 class="internet__title">Why isn’t the Internet Green?</h2>
+                <h2 class="internet__title" data-aos="tools-title" data-aos-duration="1000">Why isn’t the Internet Green?</h2>
                 <ul class="internet__wrapper">
-                    <li class="internet__list internet__list-mini">
+                    <li class="internet__list internet__list-mini" data-aos="internet-list" data-aos-duration="1000" data-aos-delay="50">
                         <div class="internet__icon">
                             <img src="img/Internet/icon3.svg" alt="icon">
                         </div>
                         <h3 class="internet__heading">Central Servers</h3>
                         <p class="internet__subtitle">100 gigabytes of data stored at central servers results in 0.2 tons of CO2.</p>
                     </li>
-                    <li class="internet__list internet__list-big">
+                    <li class="internet__list internet__list-big" data-aos="internet-center" data-aos-duration="1000" data-aos-delay="250">
                         <div class="internet__icon">
                             <img src="img/Internet/icon2.svg" alt="icon">
                         </div>
                         <h3 class="internet__heading">Power Consumption</h3>
                         <p class="internet__subtitle">The Internet uses 307 gigawatts annually.</p>
                     </li>
-                    <li class="internet__list internet__list-mini">
+                    <li class="internet__list internet__list-mini" data-aos="internet-list" data-aos-duration="1000" data-aos-delay="450">
                         <div class="internet__icon">
                             <img src="img/Internet/icon1.svg" alt="icon">
                         </div>
@@ -145,22 +150,22 @@
                         <p class="internet__subtitle">The Internet accounts for 3.7% of global greenhouse emissions.</p>
                     </li>
                 </ul>
-                <div class="internet__circle"></div>
+                <div class="internet__circle" data-aos="circle" data-aos-duration="3000"></div>
             </div>
         </section>
         
         <section class="ecology">
             <div class="container">
-                <h2 class="ecology__title">What Makes Utopia P2P Eco-positive?</h2>
+                <h2 class="ecology__title" data-aos="tools-title" data-aos-duration="1000">What Makes Utopia P2P Eco-positive?</h2>
                 <div class="ecology__wrapper ecology__wrapper-white">
 
-                    <div class="ecology__text">
+                    <div class="ecology__text" data-aos="ecology-anime" data-aos-duration="1500">
                         <h2 class="ecology__heading ecology__heading-dark">What Makes Utopia P2P Eco-positive?</h2>
                         <p class="ecology__subtitle ecology__subtitle-dark">Utopia P2P aims to make the world better. Thus, it stands for human rights, conscious power consumption, and unity.</p>
                         <button class="btn btn-green">Download now</button>
                     </div>
 
-                    <div class="ecology__ph">
+                    <div class="ecology__ph" data-aos-duration="1500" data-aos="ecology-laptop">
                         <img src="img/Ecology/printing.jpg" alt="printing">
                     </div>
 
@@ -175,12 +180,12 @@
             <div class="container"> 
                 <div class="ecology__wrapper ecology__wrapper-white ecology__wrapper-left">
 
-                    <div class="ecology__ph ecology__ph-left">
-                        <img src="img/Ecology/people.jpg" alt="people">
+                    <div class="ecology__ph ecology__ph-left" data-aos="ecology-ph-left" data-aos-duration="1500">
+                        <img src="img/Ecology/people.jpg" alt="people"> 
                     </div>
 
                     <div class="ecology__text__wrapper">
-                        <div class="ecology__text ecology__text-left">
+                        <div class="ecology__text ecology__text-left" data-aos="ecology-anime-left" data-aos-duration="1500">
                             <h2 class="ecology__heading ecology__heading-dark">True community</h2>
                             <p class="ecology__subtitle ecology__subtitle-dark">Utopia P2P aims to make the world better. Thus, it stands for human rights, conscious power consumption, and unity.</p>
                             <button class="btn btn-green">Download now</button>
@@ -216,7 +221,7 @@
                     </li>
                 </ul>
 
-                <button class="btn btn-green">Download now</button>
+                <button class="btn btn-green" data-aos="btn-anime" data-aos-duration="1000">Download now</button>
                 <div class="statistics__box"></div>
 
             </div>
@@ -226,12 +231,12 @@
             <div class="container"> 
                 <div class="ecology__wrapper ecology__wrapper-green ecology__wrapper-left">
 
-                    <div class="ecology__ph ecology__ph-left">
+                    <div class="ecology__ph ecology__ph-left" data-aos-duration="1500" data-aos="ecology-ph-left">
                         <img src="img/Ecology/laptop.jpg" alt="laptop">
                     </div>
 
                     <div class="ecology__text__wrapper ecology__text__wrapper-green">
-                        <div class="ecology__text ecology__text-left ecology__text-green">
+                        <div class="ecology__text ecology__text-left ecology__text-green" data-aos-duration="1500" data-aos="ecology-anime-left">
                             <h2 class="ecology__heading ecology__heading-white">Sustainable technologies </h2>
                             <p class="ecology__subtitle ecology__subtitle-white">Utopia is a mesh network that works without central servers. Only users' devices participate in data transmission. Consequently, CO2 emissions are reduced</p>
                             <button class="btn btn-green ecology-btn">Download now</button>
@@ -248,13 +253,13 @@
             <div class="container">
                 <div class="ecology__wrapper ecology__wrapper-green  ecology__wrapper-white">
 
-                    <div class="ecology__text">
+                    <div class="ecology__text" data-aos="ecology-anime" data-aos-duration="1500">
                         <h2 class="ecology__heading ecology__heading-white">Accessibility</h2>
                         <p class="ecology__subtitle ecology__subtitle-white">Utopia P2P is free to use. As a result, people can save money usually spent on software and invest it in eco projects.</p>
                         <button class="btn btn-white ecology-btn">Download now</button>
                     </div>
 
-                    <div class="ecology__ph">
+                    <div class="ecology__ph" data-aos-duration="1500" data-aos="ecology-laptop">
                         <img src="img/Ecology/man.jpg" alt="man">
                     </div>
 
@@ -266,37 +271,37 @@
         <section class="user">
             <div class="container">
 
-                <h2 class="user__title">User rating</h2>
+                <h2 class="user__title" data-aos="user-title" data-aos-duration="1000">User rating</h2>
 
                 <ul class="user__wrapper">
-                    <li class="user__list">
+                    <li class="user__list" data-aos-duration="1000" data-aos="user-title" data-aos-delay="100">
                         <div class="user__company"><img src="img/User/Trustpilot.svg" alt="Trustpilot"></div>
                         <ul class="user__stars">
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/gray_star.svg" alt="gray_star"></li>
+                            <li data-aos-delay="300" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="500" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="700" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="900" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1100" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/gray_star.svg" alt="gray_star"></li>
                         </ul>
                     </li>
-                    <li class="user__list">
+                    <li class="user__list" data-aos-duration="1000" data-aos="user-title" data-aos-delay="300">
                         <div class="user__company"><img src="img/User/MacUpdate.svg" alt="MacUpdate"></div>
                         <ul class="user__stars">
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="500" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="700" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="900" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1100" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1300" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
                         </ul>
                     </li>
-                    <li class="user__list">
+                    <li class="user__list" data-aos-duration="1000" data-aos="user-title" data-aos-delay="500">
                         <div class="user__company"><img src="img/User/Softpedia.svg" alt="Softpedia"></div>
                         <ul class="user__stars">
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
-                            <li><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="700" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="900" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1100" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1300" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
+                            <li data-aos-delay="1500" data-aos-duration="500" data-aos="user-star"><img src="img/Stars/star.svg" alt="star"></li>
                         </ul>
                     </li>
                 </ul>
@@ -360,5 +365,6 @@
             </div>
         </footer>
     </body>  
+<script src="./js/libs/aos.js"></script>
 <script src="./js/bundle.js"></script>
 </html>
